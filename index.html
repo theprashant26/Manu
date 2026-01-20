@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/hero.css">
+    <link rel="stylesheet" href="/css/services.css">
+    <link rel="stylesheet" href="/css/works.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/modals.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <title>Mayank Raj | Meta Ads Expert</title>
+</head>
+
+<body>
+    <!-- Loader page -->
+    <div class="LoaderWrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Button Scroll Top -->
+    <div class="ButtonScrollTop">
+        <button>
+            <i class="ri-arrow-up-fill"></i>
+        </button>
+    </div>
+
+    <!-- Form success Notification -->
+    <div class="Notification" id="successMessage">
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href='/'>
+                        <h1>Mayank.</h1>
+                    </a>
+                </div>
+                <nav class="header__links">
+                    <div class="header__link__item">
+                        <ul class="menu__link">
+                            <li class="link__item active__link">
+                                <a href="#home">Home</a>
+                            </li>
+                            <li class="link__item">
+                                <a href="#services">Services</a>
+                            </li>
+                            <li class="link__item">
+                                <a href="#works">Works</a>
+                            </li>
+                            <li class="link__item">
+                                <a href="#resume">Resume</a>
+                            </li>
+                            <li class="link__item">
+                                <a href="#blog">My Blog</a>
+                                <i class="Drop ri-arrow-down-s-line"></i>
+                                <div class="drop_down">
+                                    <ul>
+                                        <li><a href='/pages/blogpage'>Blog</a></li>
+                                        <li><a href='/pages/blogdetail'>Blog Detail</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="link__item">
+                                <a href="#testimonials">Testimonials</a>
+                            </li>
+                            <li class="link__item Change_mode">
+                                <a href="#mode">
+                                    <i class="ri-moon-fill"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="header__btn">
+                        <button onclick="location.href='#contact'">Hire me!</button>
+                    </div>
+                    <div class="mobile__icon">
+                        <i class="ri-menu-3-line"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <!-- Hero Wrapper: Contains content and image sections -->
+            <div class="hero__wrapper">
+
+                <!-- Hero Content: Text and buttons -->
+                <div class="hero__content">
+                    <!-- Decorative Blurs -->
+                    <span class="blur"></span>
+                    <span class="blur"></span>
+
+                    <!-- Hero Image Content: Introduction text -->
+                    <div class="hero__img__content">
+                        <h3>
+                            <span>
+                                Real Estate Lead Generation Specialist ✌️
+                            </span>
+                        </h3>
+                        <h2><span>I am Mayank </span>- Your Meta Ads Partner</h2>
+                        <h2> Growth Strategist</h2>
+                    </div>
+
+                    <!-- Description Paragraph -->
+                    <p class="description">
+                        I’m a performance-driven Meta Ads expert with 3+ years of hands-on experience in lead generation.
+                        I’ve helped real estate developers, education institutes, and political campaigns generate
+                        high-intent leads across India and Dubai. From strategy and audience targeting to creatives,
+                        optimization, and automation — I focus on delivering quality leads, optimized CPL, and real
+                        business outcomes. Let’s collaborate and scale your growth with data-backed advertising.
+                    </p>
+
+                    <!-- Hero Buttons: Call to action buttons -->
+                    <div class="hero__btn">
+                        <button class="second__btn" id="downloadResume">
+                            <span>Download My Cv</span>
+                            <i class="ri-download-fill"></i>
+                        </button>
+                        <button class="main__btn" onclick="location.href='#works'">
+                            <span>My Work</span>
+                            <i class="ri-arrow-right-up-line"></i>
+                        </button>
+                    </div>
+
+                    <!-- Counter and Social Media Links -->
+                    <div class="counter">
+                        <!-- Counter Section: Display number of clients -->
+                        <div class="counter__div">
+                            <h2><span id="counter" data-target="13">0</span>K+</h2>
+                            <span>Worldwide client</span>
+                        </div>
+
+                        <!-- Separator Bar -->
+                        <div class="Bar">
+                            <span></span>
+                        </div>
+
+                        <!-- Social Media Links -->
+                        <div class="social__media">
+                            <ul>
+                                <li><a href="#">
+                                        <i class="ri-github-fill"></i>
+                                    </a></li>
+                                <li><a href="#">
+                                        <i class="ri-linkedin-fill"></i>
+                                    </a></li>
+                                <li><a href="#">
+                                        <i class="ri-dribbble-line"></i>
+                                    </a></li>
+                                <li><a href="#">
+                                        <i class="ri-twitter-x-fill"></i>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image: Main image and responsive content -->
+                <div class="hero__img">
+                    <div class="hero__img__responsive">
+                        <h3>
+                            <span class="Line"></span>
+                            <span>
+                                Let's Build Together ✌️
+                            </span>
+                        </h3>
+                        <h2><span>I am Mayank </span>- Your Meta Ads Partner</h2>
+                        <h2> Growth Strategist</h2>
+                    </div>
+
+                    <!-- Decorative Blurs around Image -->
+                    <span class="blur1"></span>
+                    <span class="blur1"></span>
+
+                    <!-- Main Image -->
+                    <img class="main__img" src="./images/home.png" alt="MainImg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Partner Section: Logos of partner companies -->
+        <div class="partenerSection">
+            <div class="swiper mySwiper1">
+                <div class="swiper-wrapper partenerSection_Wrapper">
+                    <!-- Company Items: Each logo slide -->
+                    <div class="swiper-slide company__item">
+                        <img src="https://img.freepik.com/free-vector/abstract-orange-triangle-logo_1043-120.jpg?ga=GA1.1.1734565209.1682335911&semt=ais_hybrid"
+                            alt="Company">
+                    </div>
+
+                    <div class="swiper-slide company__item">
+                        <img src="https://img.freepik.com/free-vector/geometrical-logo-warm-tones_1043-156.jpg?ga=GA1.1.1734565209.1682335911&semt=ais_hybrid"
+                            alt="Company">
+                    </div>
+
+                    <div class="swiper-slide company__item">
+                        <img src="https://img.freepik.com/free-vector/abstract-colors-waves-logo_1043-106.jpg?ga=GA1.1.1734565209.1682335911&semt=ais_hybrid"
+                            alt="Company">
+                    </div>
+
+                    <div class="swiper-slide company__item">
+                        <img src="https://img.freepik.com/free-vector/abstract-logo-flame-shape_1043-44.jpg?ga=GA1.1.1734565209.1682335911&semt=ais_hybrid"
+                            alt="Company">
+                    </div>
+
+                    <div class="swiper-slide company__item">
+                        <img src="https://img.freepik.com/free-vector/abstract-colors-waves-logo_1043-93.jpg?ga=GA1.1.1734565209.1682335911&semt=ais_hybrid"
+                            alt="Company">
+                    </div>
+
+                    <div class="swiper-slide company__item">
+                        <img src="https://img.freepik.com/free-vector/red-abstract-logo_1043-151.jpg?ga=GA1.1.1734565209.1682335911&semt=ais_hybrid"
+                            alt="Company">
+                    </div>
+
+                    <div class="swiper-slide company__item">
+                        <img src="https://img.freepik.com/free-vector/abstract-logo-made-with-rounded-squares_1043-52.jpg?ga=GA1.1.1734565209.1682335911&semt=ais_hybrid"
+                            alt="Company">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="services__wrapper">
+                <div class="services__content">
+
+                    <!-- Decorative Blur Elements -->
+                    <span class="blur3"></span>
+                    <span class="blur3"></span>
+
+                    <!-- Title Section -->
+                    <div class="Title">
+                        <h3>Services</h3>
+                        <h2>
+                            My specialties
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- Services Menu -->
+                <div class="services__menu">
+
+                    <!-- Meta Ads Strategy -->
+                    <div class="services__item">
+                        <div class="services__icon">
+                            <i class="ri-pages-line"></i>
+                        </div>
+                        <div class="services__title_content">
+                            <h4>Meta Ads Strategy</h4>
+                            <p>
+                                Data-driven Meta Ads strategy focused on lead quality, audience targeting,
+                                and funnel planning to achieve consistent and scalable results.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Lead Generation -->
+                    <div class="services__item">
+                        <div class="services__icon">
+                            <i class="ri-smartphone-line"></i>
+                        </div>
+                        <div class="services__title_content">
+                            <h4>Lead Generation</h4>
+                            <p>
+                                High-intent lead generation for Real Estate, Education, and Political campaigns
+                                using optimized Meta Lead Forms and landing pages.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- CPL Optimization -->
+                    <div class="services__item">
+                        <div class="services__icon">
+                            <i class="ri-settings-3-line"></i>
+                        </div>
+                        <div class="services__title_content">
+                            <h4>CPL Optimization</h4>
+                            <p>
+                                Continuous campaign monitoring, A/B testing, and scaling strategies
+                                to reduce cost per lead while maintaining strong lead quality.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Funnel & Automation -->
+                    <div class="services__item">
+                        <div class="services__icon">
+                            <i class="ri-code-s-slash-fill"></i>
+                        </div>
+                        <div class="services__title_content">
+                            <h4>Funnel & Automation</h4>
+                            <p>
+                                Complete lead funnel setup including landing pages, instant forms,
+                                CRM integration, and WhatsApp automation for faster conversions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Real Estate Campaigns -->
+                    <div class="services__item">
+                        <div class="services__icon">
+                            <i class="ri-macbook-line"></i>
+                        </div>
+                        <div class="services__title_content">
+                            <h4>Real Estate Campaigns</h4>
+                            <p>
+                                Specialized real estate campaigns for top developers with proven
+                                results across luxury, mid-segment, and international projects.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Creative & Ad Copies -->
+                    <div class="services__item">
+                        <div class="services__icon">
+                            <i class="ri-clapperboard-line"></i>
+                        </div>
+                        <div class="services__title_content">
+                            <h4>Creative & Ad Copies</h4>
+                            <p>
+                                Scroll-stopping creatives and high-converting ad copies designed
+                                to attract the right audience and improve engagement & conversions.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About us section -->
+    <section id="resume">
+        <div class="container">
+            <div class="aboutMaincontent">
+                <div class="aboutWrapper">
+                    <div class="AboutImg">
+                        <div class="vide"></div>
+                        <img src="/images/About.png" alt="About">
+                    </div>
+                    <div class="AboutContent">
+                        <div class="Title">
+                            <h3>About me</h3>
+                            <h2>
+                                Find all my details here...
+                            </h2>
+                        </div>
+                        <div class="AboutTabcontent">
+                            <!-- This is a hidden div used for storing information to generate the PDF -->
+                            <div class="HideDiv-PDF" style="display: none;">
+                                <h3 class="NamePerson">Mayank Raj</h3>
+                                <h3 class="JobTitle">Performance Marketing & Meta Ads Specialist</h3>
+                                <h3 class="PhonePDF">+91 XXXXXXXXXX</h3>
+                                <h3 class="EmailPDF">contact@yourportfolio.com</h3>
+                                <h3 class="AdrressPDF">India & Dubai</h3>
+                            </div>
+                            <p class="aboutme">
+                                I’m Mayank Raj, a performance-driven Meta Ads specialist with 3+ years of hands-on experience
+                                in lead generation and paid advertising. I work with real estate developers, education
+                                institutes, and political campaigns to generate high-intent, conversion-ready leads.<br><br>
+
+                                My expertise lies in building complete lead funnels — from audience research and ad creatives
+                                to CPL optimization, CRM integration, and WhatsApp automation. I’ve successfully managed
+                                high-volume campaigns across India and Dubai, focusing on quality leads, measurable results,
+                                and long-term growth for my clients.
+                            </p>
+                            <button onclick="location.href='#contact'">Hire Me!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="AboutTabcontent">
+                    <div class="timeline">
+                        <div class="Education_Experience">
+                            <h3>Education</h3>
+                            <div class="Desc">
+                                <h4>2018 - 2019</h4>
+                                <h3>DIGITAL MARKETING & META ADS</h3>
+                                <small>Professional Certification</small>
+                                <p>
+                                    Specialized training in Meta Ads, audience targeting, funnel strategy,
+                                    lead generation, and performance optimization.
+                                </p>
+                            </div>
+                            <div class="Desc">
+                                <h4>2019 - 2020</h4>
+                                <h3>PERFORMANCE MARKETING</h3>
+                                <small>Advanced Online Programs</small>
+                                <p>
+                                    Hands-on learning focused on CPL reduction, scaling campaigns,
+                                    analytics, and conversion tracking.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="Education_Experience">
+                            <h3>Experience</h3>
+                            <div class="Desc">
+                                <h4>2021 - Present</h4>
+                                <h3>META ADS & PERFORMANCE MARKETER</h3>
+                                <small>Freelance / Consulting</small>
+                                <p>
+                                    Managing and scaling Meta Ads campaigns for real estate, education,
+                                    political, and international projects with consistent lead delivery.
+                                </p>
+                            </div>
+                            <div class="Desc">
+                                <h4>2022 - Present</h4>
+                                <h3>REAL ESTATE LEAD GENERATION SPECIALIST</h3>
+                                <small>India & Dubai Markets</small>
+                                <p>
+                                    Generated bulk leads for top developers including Godrej, Omaxe,
+                                    Birla, M3M, Damac, and Danube with optimized CPL and strong conversions.
+                                </p>
+                            </div>
+                            <div class="Desc">
+                                <h4>2023 - Present</h4>
+                                <h3>MULTI-NICHE CAMPAIGN STRATEGIST</h3>
+                                <small>Education & Political Campaigns</small>
+                                <p>
+                                    Delivered admission-focused education campaigns and high-reach
+                                    political digital campaigns with audience-level targeting.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Skills__Div">
+            <div class="skills__wrapper">
+                <div class="skills__item">
+                    <div>
+                        <i class="ri-bar-chart-fill"></i>
+                        <h4>(95%)</h4>
+                    </div>
+                    <h5>Meta Ads</h5>
+                </div>
+                <div class="skills__item">
+                    <div>
+                        <i class="ri-line-chart-line"></i>
+                        <h4>(90%)</h4>
+                    </div>
+                    <h5>Lead Generation</h5>
+                </div>
+                <div class="skills__item">
+                    <div>
+                        <i class="ri-settings-3-line"></i>
+                        <h4>(92%)</h4>
+                    </div>
+                    <h5>CPL Optimization</h5>
+                </div>
+                <div class="skills__item">
+                    <div>
+                        <i class="ri-customer-service-2-line"></i>
+                        <h4>(88%)</h4>
+                    </div>
+                    <h5>CRM & Automation</h5>
+                </div>
+                <div class="skills__item">
+                    <div>
+                        <i class="ri-whatsapp-line"></i>
+                        <h4>(94%)</h4>
+                    </div>
+                    <h5>WhatsApp Funnels</h5>
+                </div>
+                <div class="skills__item">
+                    <div>
+                        <i class="ri-global-line"></i>
+                        <h4>(85%)</h4>
+                    </div>
+                    <h5>International Campaigns</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section for displaying the portfolio of recent works -->
+    <section id="works">
+        <div class="container">
+            <div class="works__wrapper">
+                <div class="works__content__top">
+                    <span class="blur4"></span>
+                    <span class="blur4"></span>
+                    <div class="Title">
+                        <h3>Portfolio</h3>
+                        <h2>
+                            My Recent Works
+                        </h2>
+                    </div>
+                    <div class="filter__box">
+                        <form id="filterForm" onsubmit="applyFilter(event)">
+                            <button type="submit">Filter</button>
+                            <select id="filterSelect">
+                                <option value="all">All</option>
+                                <option value="Web">Lead Generation</option>
+                                <option value="Ux">Campaign Strategy</option>
+                                <option value="Mobile">International Campaigns</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="works__menu">
+
+                    <!-- Real Estate Lead Generation -->
+                    <div class="work__item Web">
+                        <div class="work_category">
+                            <button>Real Estate</button>
+                            <button>Lead Generation</button>
+                        </div>
+                        <div class="works__img">
+                            <img src="https://img.freepik.com/vecteurs-libre/developpeurs-logiciels-codant-ordinateur-script-codage-ingenierie-illustration-vectorielle-plane-conception-interface-conception-site-web-concept-programmation-page-web-destination_74855-8733.jpg?t=st=1715629129~exp=1715632729~hmac=8278ee287ab715c74e112c684b3c592e80f7302a3ade8cf1ecae29d12e3d8673&w=1060"
+                                alt="Real Estate Lead Generation">
+                        </div>
+                        <div class="work__title__hover">
+                            <h2>Meta Ads Campaign</h2>
+                            <div>
+                                <a href="#modal">
+                                    <h4>High-volume real estate lead generation with optimized CPL</h4>
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Lead Generation -->
+                    <div class="work__item Web">
+                        <div class="work_category">
+                            <button>Education</button>
+                            <button>Admissions</button>
+                        </div>
+                        <div class="works__img">
+                            <img src="https://img.freepik.com/psd-gratuit/modele-page-destination-narration-photo_23-2148945579.jpg?t=st=1715630873~exp=1715634473~hmac=610894158af6ee30e10b7a3e96b9fc8a1491e372a06e6113292dbc1c5ac63a2a&w=1060"
+                                alt="Education Lead Generation">
+                        </div>
+                        <div class="work__title__hover">
+                            <h2>Education Campaign</h2>
+                            <div>
+                                <a href="#modal">
+                                    <h4>Student & parent-focused admission lead generation funnels</h4>
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- International / Dubai Campaign -->
+                    <div class="work__item Mobile">
+                        <div class="work_category">
+                            <button>International</button>
+                            <button>Dubai</button>
+                        </div>
+                        <div class="works__img">
+                            <img src="https://img.freepik.com/vecteurs-libre/crans-application-reservation-voyage_23-2148626967.jpg?t=st=1715630951~exp=1715634551~hmac=a6375a96eb9c64e380edb5eaab9de402ae426a4321412127fc5b49dbd93ec40e&w=900"
+                                alt="Dubai Real Estate Campaign">
+                        </div>
+                        <div class="work__title__hover">
+                            <h2>Dubai Real Estate</h2>
+                            <div>
+                                <a href="#modal">
+                                    <h4>Investor-focused international real estate lead campaigns</h4>
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Political Campaign -->
+                    <div class="work__item Ux">
+                        <div class="work_category">
+                            <button>Political</button>
+                            <button>Digital Campaign</button>
+                        </div>
+                        <div class="works__img">
+                            <img src="https://img.freepik.com/photos-gratuite/mains-angle-eleve-tenant-du-papier_23-2149930977.jpg?t=st=1715629631~exp=1715633231~hmac=d936815512e9c6d8d7044ef59ffb091b2f47b8dce8a807461ba8339f03bb8603&w=900"
+                                alt="Political Digital Campaign">
+                        </div>
+                        <div class="work__title__hover">
+                            <h2>Political Campaign</h2>
+                            <div>
+                                <a href="#modal">
+                                    <h4>Awareness, engagement & volunteer lead generation campaigns</h4>
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of works section -->
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="testimonials__wrapper">
+
+                <div class="testimonials__Top">
+                    <div class="Title">
+                        <h3>Testimonial</h3>
+                        <h2>
+                            My Client's Stories
+                        </h2>
+                    </div>
+                    <span class="blur3"></span>
+                    <span class="blur3"></span>
+                </div>
+
+                <div class="testimonials__right">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <!-- Testimonial 1 -->
+                            <div class="swiper-slide">
+                                <div class="customers__details">
+                                    <div class="customers__img">
+                                        <i class='bx bxs-quote-left'></i>
+                                        <img src="images/review1.jpg" alt="Review">
+                                    </div>
+                                    <div class="customerNm">
+                                        <h5 class="customer__name">Rahul S.</h5>
+                                        <small>Marketing Head, Real Estate Developer</small>
+                                    </div>
+                                </div>
+                                <p>
+                                    Mayank helped us generate consistent, high-quality leads for our real estate project.
+                                    The CPL dropped significantly and site visit conversions improved within weeks.
+                                    His Meta Ads strategy delivered real business impact.
+                                </p>
+                                <div class="customers_Star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 2 -->
+                            <div class="swiper-slide">
+                                <div class="customers__details">
+                                    <div class="customers__img">
+                                        <i class='bx bxs-quote-left'></i>
+                                        <img src="images/review2.jpg" alt="Review">
+                                    </div>
+                                    <div class="customerNm">
+                                        <h5 class="customer__name">Amit Verma</h5>
+                                        <small>Director, Education Institute</small>
+                                    </div>
+                                </div>
+                                <p>
+                                    Our admission campaigns performed extremely well under Mayank’s guidance.
+                                    Lead quality was excellent and CPL stayed well within budget.
+                                    Highly recommended for education lead generation.
+                                </p>
+                                <div class="customers_Star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 3 -->
+                            <div class="swiper-slide">
+                                <div class="customers__details">
+                                    <div class="customers__img">
+                                        <i class='bx bxs-quote-left'></i>
+                                        <img src="images/review3.png" alt="Review">
+                                    </div>
+                                    <div class="customerNm">
+                                        <h5 class="customer__name">Campaign Manager</h5>
+                                        <small>Political Digital Campaign</small>
+                                    </div>
+                                </div>
+                                <p>
+                                    The digital campaign execution was very structured and data-driven.
+                                    Volunteer registrations and engagement increased multiple times.
+                                    Strong audience targeting and messaging made a big difference.
+                                </p>
+                                <div class="customers_Star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bx-star'></i>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 4 -->
+                            <div class="swiper-slide">
+                                <div class="customers__details">
+                                    <div class="customers__img">
+                                        <i class='bx bxs-quote-left'></i>
+                                        <img src="images/review4.png" alt="Review">
+                                    </div>
+                                    <div class="customerNm">
+                                        <h5 class="customer__name">NRI Investor</h5>
+                                        <small>Dubai Real Estate Client</small>
+                                    </div>
+                                </div>
+                                <p>
+                                    Mayank handled our Dubai real estate lead generation very professionally.
+                                    The quality of international leads was impressive, and response time was fast.
+                                    Excellent experience working with him.
+                                </p>
+                                <div class="customers_Star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact__wrapper">
+                <!-- Section Header with Title -->
+                <div class="contact__Top">
+                    <div class="Title">
+                        <h3>Contact</h3>
+                        <h2>
+                            Let's work together!
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- Contact Form and Information Section -->
+                <div class="contact_form_info">
+                    <!-- Contact Form -->
+                    <div class="form">
+                        <form id="contactForm" onsubmit="handleFormSubmit(event, 'Thank you for contacting us! Your message has been received, and we look forward to getting back to you.')">
+                            <div class="input">
+                                <input type="text" placeholder="First name" required>
+                                <input type="text" placeholder="Last name" required>
+                            </div>
+                            <div class="input">
+                                <input type="email" placeholder="Email address" required>
+                                <input type="text"  placeholder="Phone number" required>
+                            </div>
+                            <div class="input">
+                                <textarea  rows="6" placeholder="Message ..." required></textarea>
+                            </div>
+                            <div class="header__btn">
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Contact Information with Icons -->
+                    <div class="contact__right">
+                        <!-- Decorative Blur Elements -->
+                        <span class="blur4"></span>
+                        <span class="blur4"></span>
+
+                        <!-- Contact Details List -->
+                        <ul>
+                            <!-- Phone Information -->
+                            <li>
+                                <div class="iconcontact">
+                                    <i class="ri-phone-fill"></i>
+                                </div>
+                                <div class="infos__contact">
+                                    <h5>Phone</h5>
+                                    <small>+01 123 654 8096</small>
+                                </div>
+                            </li>
+
+                            <!-- Email Information -->
+                            <li>
+                                <div class="iconcontact">
+                                    <i class="ri-mail-open-fill"></i>
+                                </div>
+                                <div class="infos__contact">
+                                    <h5>Email</h5>
+                                    <small>LetTalk@Portfolio.com</small>
+                                </div>
+                            </li>
+
+                            <!-- Address Information -->
+                            <li>
+                                <div class="iconcontact">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <div class="infos__contact">
+                                    <h5>Address</h5>
+                                    <small>Warne Park Street Pine, FL 33157, New York</small>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer --> 
+    <footer class='footer'>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <span class="blur"></span>
+                    <span class="blur"></span>
+                    <a href='/'>
+                        <h2>Mayank.</h2>
+                    </a>
+                    <p class="small__text description">
+                        Performance-driven Meta Ads specialist focused on delivering high-quality leads and real business results. I work
+                        with real estate developers, education brands, political campaigns, and international projects to build scalable
+                        lead generation systems. From strategy to optimization, my approach is always data-backed, result-oriented, and
+                        growth focused 😎.
+                    </p>
+                </div>
+                <div class="footer__quick__links">
+                    <h3 class="quick__links__title">Links</h3>
+                    <ul class='quick_link'>
+                        <li class="quicks_links_item">
+                            <a href="#services">Services</a>
+                        </li>
+                        <li class="quicks_links_item">
+                            <a href="#resume">Resume</a>
+                        </li>
+                        <li class="quicks_links_item">
+                            <a href="#testimonials">Testimonials</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__quick__links">
+                    <h3 class="quick__links__title">Company</h3>
+                    <ul class='quick_link'>
+                        <li class="quicks_links_item">
+                            <a href="#works">Works</a>
+                        </li>
+                        <li class="quicks_links_item">
+                            <a href="#blog">Blog</a>
+                        </li>
+                        <li class="quicks_links_item">
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Fotter_Newsletter">
+                    <h3 class="quick__links__title">Newsletter</h3>
+                    <ul class='quick_link'>
+                        <form id="subscribeForm" onsubmit="handleFormSubmit(event, '🎉 You are now subscribed! Thank you for joining our community.')">
+                            <div class="newsletter">
+                                <input type="email" placeholder="Email address.." required>
+                            </div>
+                            <div class="newsletter">
+                                <button type="submit">Subscribe now</button>
+                            </div>
+                        </form>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 All rights reserved by <span>Jarvis.</span></p>
+        </div>
+    </footer>
+
+    <!-- Modal Works Details -->
+    <div class="modalWorks">
+        <div class="WorksContainer">
+            <span class="ModalClose">
+                <i class="ri-close-fill"></i>
+            </span>
+            <div class="WorksContainer_wrapper">
+                <div class="leftModalImg">
+                    <img src="https://img.freepik.com/psd-gratuit/modele-page-destination-narration-photo_23-2148945579.jpg?t=st=1715630873~exp=1715634473~hmac=610894158af6ee30e10b7a3e96b9fc8a1491e372a06e6113292dbc1c5ac63a2a&w=1060"
+                        alt="Project">
+                </div>
+                <div class="RightModalContent">
+                    <h4>Featured - Development</h4>
+                    <h2>Landing Page Development.</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque tempore consequuntur dolor
+                        esse saepe doloremque excepturi exercitationem minus modi laudantium.
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. In unde eos veniam inventore,
+                        eaque esse cupiditate delectus commodi iusto! Ullam libero in enim sunt quas! Illo
+                        temporibus voluptates fugit eligendi!
+                    </p>
+                    <div class="modal_btn">
+                        <button>
+                            Like <i class="ri-thumb-up-line"></i>
+                        </button>
+                        <button>
+                            View Project <i class="ri-arrow-right-wide-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/swiper.js"></script>.
+    <script src="/js/header.js"></script>
+</body>
+
+</html>

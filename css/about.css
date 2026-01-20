@@ -1,0 +1,232 @@
+.aboutMaincontent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.aboutWrapper {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: space-between;
+}
+
+/* About Left Img */
+.AboutImg ,.AboutContent{
+    width: 50%;
+    position: relative;
+    height: fit-content;
+}
+
+.vide{
+    position: absolute;
+    background:#F2F2D5;
+    width: 90%;
+    height: 100%;
+    transform: rotate(-5deg);
+}
+.AboutImg img {
+    width: 90%;
+    transform: rotate(5deg);
+}
+/* About Content */
+.AboutTabcontent,
+.skills__wrapper {
+    padding: 30px 0;
+}
+
+.AboutTabcontent p {
+    margin: 0;
+    text-wrap: wrap;
+}
+
+.AboutTabcontent button {
+    margin-top: 20px;
+    background: transparent;
+    color: var(--dark-color);
+    border: 2px solid var(--main-color);
+}
+
+.timeline {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.Education_Experience{
+    width: 45%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+.Education_Experience h3{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    position: relative;
+}
+/* The actual content */
+.Desc {
+    padding: 20px 30px;
+    background-color: var(--page-bgcolor);
+    position: relative;
+    border-radius: 6px;
+    box-shadow: var(--box-shadow);
+}
+.Desc::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background:transparent;
+    border-right: 4px solid var(--main-color);
+    border-top: 4px solid var(--main-color);
+    border-radius: 50%;
+    right: -7px;
+    top: -7px;
+    z-index: -1;
+}
+.Desc h4 {
+    color: var(--main-color);
+    font-size: 1.2rem;
+}
+
+.Desc h3 {
+    color: var(--main-color);
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+.Desc small {
+    color: var(--small-text);
+}
+
+.Desc p {
+    margin: 10px 0;
+    font-size: .9rem;
+    text-wrap: wrap;
+}
+
+.Skills__Div {
+    background: var(--background-input);
+    padding: 0 15px;
+}
+
+.skills__wrapper {
+    width: 1140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.skills__item {
+    flex: 1 0 auto;
+    flex-basis: 150px;
+    text-align: center;
+}
+
+.skills__item div {
+    background: var(--page-bgcolor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+.skills__item div i {
+    font-size: 3rem;
+    color: var(--dark-color);
+    cursor: pointer;
+}
+
+.skills__item div h4 {
+    color: var(--dark-color);
+    font-size: 1.2rem;
+}
+
+.skills__item div:hover i,
+.skills__item div:hover h4 {
+    color: var(--main-color);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.skills__item h5 {
+    color: var(--dark-color);
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .skills__wrapper{
+        width: 100%;
+    }
+}
+
+@media (max-width:800px) {
+    .AboutImg img {
+        width: 100%;
+    }
+    .AboutTabcontent p,
+    .AboutTabcontent button {
+        font-size: .9rem !important;
+    }
+
+    .AboutTabcontent ul li .Desc h4 {
+        font-size: 1.4rem;
+    }
+
+    .AboutTabcontent ul li .Desc h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width:768px) {
+
+    .aboutWrapper {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .AboutImg{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .AboutImg ,.AboutContent{
+        width: 100%;
+    }
+    .AboutImg img {
+        width: 90%;
+    }
+}
+
+@media (max-width:620px) {
+    .timeline{
+        flex-direction: column;
+    }
+    .Education_Experience{
+        width: 100%;
+    }   
+
+    .Desc h4 {
+        color: var(--main-color);
+        font-size: 1.1rem;
+    }
+
+    .Desc h3 {
+        color: var(--main-color);
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
+
+    .Desc p {
+        font-size: .8rem;
+    }
+}

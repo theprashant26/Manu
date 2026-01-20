@@ -1,0 +1,218 @@
+/* ------------------- Blog Detail Styles ------------------- */
+
+/* Blog Detail Item */
+.BlogPage_item {
+    background: transparent;
+    box-shadow: unset;
+    border-radius: unset;
+    cursor: unset;
+    border-bottom: 1px solid #e4e3e3;
+}
+
+/* Blog Detail Content Description */
+.content_blogPage .description {
+    margin: 20px 0;
+}
+
+/* Blog Detail Item Headings */
+.BlogPage_item h3 {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: var(--dark-color);
+}
+
+/* Blog Detail Quote Block */
+.BlogPage_item .Quote {
+    background: var(--container-color);
+    padding: 20px 16px;
+    border-radius: 12px;
+}
+
+.BlogPage_item .Quote div i {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.BlogPage_item .Quote p {
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.BlogPage_item .Quote h4 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: flex;
+    font-style: italic;
+    column-gap: 2.5rem;
+    color: var(--dark-color);
+}
+
+.BlogPage_item .Quote h4 .Line2 {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.BlogPage_item .Quote h4 .Line2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    background: var(--main-color);
+}
+
+/* ------------------- Tags and Navigation Styles ------------------- */
+
+/* Tags and Navigation Wrapper */
+.tags_div, .BlogNextandPrevious {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Tag Button Styles */
+.tags_div .Tagbtn {
+    flex: 1;
+    flex-basis: 200px;
+    margin-top: unset;
+}
+
+/* Social Media Links */
+.tags_div .social_media {
+    flex: 1 0 0 0;
+    flex-basis: 100px;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tags_div .social_media span {
+    border: 1px solid #484848;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 8px;
+    color: var(--dark-color);
+}
+
+.tags_div .social_media span:hover {
+    color: var(--light-color);
+    background: var(--main-color);
+    border: none;
+    transition: .2s;
+}
+
+/* Next and Previous Blog Items */
+.BlogNextandPrevious .BlogItemNextandPre {
+    flex: 1;
+    flex-basis: 300px;
+    display: flex;
+    align-items: flex-start;
+    gap: .5rem;
+    cursor: pointer;
+    background: var(--container-color);
+    border-radius: 12px;
+    padding: 20px 16px;
+}
+
+.BlogNextandPrevious .BlogItemNextandPre:nth-child(2) {
+    text-align: end;
+}
+
+.BlogNextandPrevious .BlogItemNextandPre img, .comment_content img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.BlogNextandPrevious .BlogItemNextandPre:hover img, .comment_content:hover img {
+    transform: none !important;
+}
+
+.BlogNextandPrevious .BlogItemNextandPre div span {
+    color: var(--main-color);
+    font-size: 1.2rem;
+}
+
+.BlogNextandPrevious .BlogItemNextandPre div h4 {
+    line-height: 1.1rem;
+    margin-top: 8px;
+    color: var(--dark-color);
+}
+
+/* ------------------- Comment Section Styles ------------------- */
+
+/* Individual Comment */
+.comment {
+    padding: 20px 16px;
+    border-bottom: 1px solid #e4e3e3;
+}
+
+.comment:last-child, .BlogPage_item:last-child {
+    border: none;
+}
+
+/* Comment Content */
+.comment_content {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Comment Message */
+.comment_MSG p {
+    font-size: .9rem;
+    margin: 8px 0;
+}
+
+.comment_MSG small {
+    color: var(--main-color);
+}
+
+/* Comment Button */
+.comment_MSG button {
+    padding: 5px 10px;
+    font-size: .9rem;
+    background: transparent;
+    border: 1px solid var(--main-color);
+}
+
+/* Reply Section */
+.reply {
+    margin: 0 20px;
+}
+
+/* ------------------- Blog Detail Form Styles ------------------- */
+
+/* Blog Detail Form Small Text */
+.BlogPage_item .content_blogPage small {
+    color: var(--dark-color);
+}
+
+/* Blog Detail Form Input and Textarea */
+.BlogPage_item .content_blogPage form div {
+    margin: 14px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.BlogPage_item .content_blogPage form div input, 
+.BlogPage_item .content_blogPage form div textarea {
+    padding: 15px 12px;
+    border-radius: 7px;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--border-input);
+    color: var(--dark-color);
+    font-size: 1rem;
+}
+
+/* Blog Detail Form Button */
+.BlogPage_item .content_blogPage form button {
+    margin: 0 8px;
+}

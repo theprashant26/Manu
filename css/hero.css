@@ -1,0 +1,453 @@
+/* Importation de la police */
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&amp;display=swap');
+
+/* Hero Section */
+.hero__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.hero__img {
+    width: 45%;
+    position: relative;
+}
+
+.hero__content {
+    width: 55%;
+}
+
+.hero__img .main__img {
+    width: 100%;
+}
+
+/* Blur Effet */
+.hero__content .blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 40px var(--active-color);
+    z-index: -1;
+    top: 100px;
+}
+
+.hero__img .blur1 {
+    box-shadow: 0 0 1000px 40px var(--active-color);
+    z-index: -3;
+    top: 10%;
+    right: 0%;
+}
+.hero__img .blur2 {
+    box-shadow: 0 0 1000px 40px var(--dark-bgcolor);
+    z-index: -4;
+    bottom: 10%;
+   left: 10%;
+}
+
+/* Titres */
+.hero__content .hero__img__content h2 span,
+.hero__img .hero__img__responsive h2 span {
+    color: var(--main-color);
+}
+
+.hero__content .hero__img__content h2 {
+    font-size: 3.5rem;
+    line-height: 3.4rem;
+}
+
+.hero__content .hero__img__content h3,
+.hero__img .hero__img__responsive h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: var(--dark-color);
+    margin-bottom: 5px;
+    display: flex;
+    gap: 3rem;
+}
+
+.hero__content .hero__img__content h3 .Line,
+.hero__img .hero__img__responsive h3 .Line {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.hero__content .hero__img__content h3 .Line::after,
+.hero__img .hero__img__responsive h3 .Line::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--main-color);
+}
+
+.hero__img__responsive {
+    display: none;
+}
+
+/* Boutons */
+.hero__btn {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 2rem;
+    width: 100%;
+}
+
+.hero__btn .main__btn {
+    background: var(--main-color);
+    color: var(--light-color);
+}
+
+.main__btn:hover i,
+.second__btn:hover i {
+    position: relative;
+    top: -5px;
+    transition: .5s;
+}
+
+.hero__btn .second__btn {
+    background: transparent;
+    border: 2px solid var(--main-color);
+    color: var(--dark-color);
+}
+
+/* Compteurs et Réseaux Sociaux */
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.counter__div,
+.social__media {
+    width: 45%;
+}
+
+.Bar {
+    width: 10%;
+    position: relative;
+}
+
+.Bar span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 3px;
+    height: 35px;
+    background: var(--main-color);
+}
+
+.counter__div,
+.social__media ul {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.counter__div h2,
+.counter__div h2 span {
+    font-family: "Poetsen One", sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.counter__div span {
+    font-size: .9rem;
+    color: var(--dark-color);
+}
+
+.social__media ul i {
+    font-size: 1.7rem;
+}
+
+.social__media ul i:hover {
+    color: var(--main-color);
+    transition: .5s;
+}
+
+/* Section des Partenaires */
+.partenerSection {
+    box-shadow: var(--box-shadow);
+    border-radius: 12px;
+    background: var(--container-color);
+}
+
+.partenerSection .swiper {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.partenerSection_Wrapper,
+.partenerSection .swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.company__item,
+.partenerSection_Wrapper .swiper-slide {
+    width: 100%;
+    height: 150px;
+    cursor: pointer;
+    padding: 5px;
+    background: var(--container-color);
+}
+
+.company__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%);
+}
+
+/* responsive */
+@media only screen and (max-width:992px) {
+    .hero__btn {
+        flex-wrap: wrap;
+    }
+
+    .hero__btn .main__btn,
+    .hero__btn .second__btn {
+        font-size: 1rem;
+    }
+
+    .hero__content .hero__img__content h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .hero__content .hero__img__content h3 {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+
+
+    .hero__content,
+    .hero__img {
+        width: 50%;
+    }
+
+    .social__media ul i {
+        font-size: 1.5rem;
+    }
+
+    .counter__div h2,
+    .counter__div h2 span {
+        font-size: 1.7rem;
+    }
+
+    .counter__div span {
+        font-size: .8rem;
+    }
+
+    .partenerSection .swiper {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:908px) {
+    .hero__content .hero__img__content h2 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .hero__content .hero__img__content h3 {
+        font-size: 1.1rem;
+        line-height: 1.1rem;
+    }
+
+    .counter__div h2,
+    .counter__div h2 span {
+        font-size: 1.5rem;
+    }
+
+    .social__media ul i {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: .9rem !important;
+    }
+
+}
+
+@media only screen and (max-width:800px) {
+    .counter {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .counter__div,
+    .social__media,
+    .social__media ul {
+        flex: 1 0 auto;
+        flex-basis: 330px;
+        justify-content: center;
+    }
+
+    .Bar {
+        width: 50%;
+        height: 30px;
+    }
+
+    .Bar span {
+        width: 35px;
+        height: 3px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .hero__img .hero__img__responsive {
+        margin-bottom: 20px;
+    }
+
+    .hero__img .hero__img__responsive h2 {
+        font-size: 2.9rem;
+        line-height: 2.9rem;
+    }
+
+    .hero__img .hero__img__responsive h3 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        margin-bottom: 10px;
+        gap: 2.5rem !important;
+    }
+
+    .hero__img .hero__img__responsive h3 .Line {
+        margin-bottom: 3px;
+    }
+
+    .hero__img .hero__img__responsive h3 .Line::after {
+        width: 30px;
+    }
+
+    .hero__img__responsive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .hero__img__content {
+        display: none;
+    }
+
+    .hero__wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero__content,
+    .hero__img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .hero__img .main__img {
+        width: 70%;
+    }
+
+    .hero__content p {
+        text-wrap: wrap;
+        width: 90%;
+        text-align: center;
+    }
+
+    .hero__btn {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .counter__div h2,
+    .counter__div h2 span {
+        font-size: 1.6rem;
+    }
+
+    .social__media ul i {
+        font-size: 1.3rem;
+    }
+
+    .counter__div span {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width:590px) {
+
+    .hero__btn .main__btn,
+    .hero__btn .second__btn {
+        flex: 1 0 0 auto !important;
+        font-size: .9rem;
+    }
+
+    .hero__img .hero__img__responsive h2 {
+        font-size: 2.3rem;
+        line-height: 2.3rem;
+    }
+
+    .hero__img .hero__img__responsive h3 {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+
+    .hero__img .main__img {
+        width: 100%;
+    }
+
+    .hero__img .blur1 {
+        top: unset !important;
+        bottom: 0%;
+        right: 10% !important;
+    }
+
+    .hero__content p {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:374px) {
+
+    .hero__btn .main__btn,
+    .hero__btn .second__btn {
+        flex: 1 0 auto !important;
+    }
+
+    .hero__content p {
+        font-size: .8rem;
+    }
+
+    .hero__img .hero__img__responsive h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .hero__img .hero__img__responsive h3 {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+}
+
+@media only screen and (max-width:318px) {
+    .hero__img .hero__img__responsive h2 {
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+    }
+
+    .hero__img .hero__img__responsive h3 {
+        font-size: .9rem;
+        line-height: .9rem;
+    }
+}

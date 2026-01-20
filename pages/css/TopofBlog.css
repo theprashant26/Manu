@@ -1,0 +1,85 @@
+/* Main Blog Section Styling */
+.TopofBlog {
+    margin-top: 40px;
+}
+
+.TopBlog_Content, .BlogTopContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    position: relative;
+}
+
+/* Breadcrumb Navigation Styling */
+.BlogTopLins {
+    background: var(--main-color);
+    padding: 10px 15px;
+    border-radius: 16px;
+    border: 1px solid #484848;
+    cursor: pointer;
+    color: var(--light-color);
+}
+.BlogTopLins h3,.BlogTopLins h3 a{
+    color: var(--light-color);
+}
+/* Blog Content Text Styling */
+.BlogTopContent {
+    text-align: center;
+}
+
+.BlogTopContent h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
+.BlogTopContent p {
+    width: 60%;
+    font-size: 1.3rem;
+}
+
+/* Decorative Blur Effects */
+.TopBlog_Content .blur {
+    box-shadow: 0 0 4000px 40px var(--active-color);
+    z-index: -1;
+    top: 100px;
+    left: 0;
+}
+
+.TopBlog_Content .blur1 {
+    box-shadow: 0 0 1000px 40px var(--active-color);
+    z-index: -3;
+    top: 70%;
+    right: 0%;
+}
+
+/* Responsive Styling for Tablets */
+@media (max-width: 768px) {
+    .BlogTopContent h1 {
+        font-size: 4.7rem;
+        line-height: 4.7rem;
+    }
+
+    .BlogTopContent p {
+        width: 70%;
+        font-size: 1.2rem;
+    }
+}
+
+/* Responsive Styling for Mobile Devices */
+@media (max-width: 500px) {
+    .BlogTopLins h3 ,.BlogTopLins h3 a {
+        font-size: 1rem;
+    }
+
+    .BlogTopContent h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .BlogTopContent p {
+        width: 80%;
+        font-size: 1rem;
+    }
+}

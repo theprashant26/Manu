@@ -1,0 +1,225 @@
+/* --- Works Wrapper and List Styles --- */
+.works__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* --- Content Top Section Styles --- */
+.works__content__top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+.works__content__top .blur4 {
+    position: absolute;
+    box-shadow: 0 0 1000px 40px var(--active-color);
+    z-index: -3;
+    top: 10%;
+    left: 0%;
+}
+
+/* --- Filter Box Styles --- */
+.filter__box {
+    flex: 1 0 0 auto;
+    flex-basis: 350px;
+}
+
+.filter__box form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filter__box button {
+    background: var(--main-color);
+    color: var(--light-color);
+    font-size: .9rem;
+    border-radius: 0px;
+    font-weight: normal;
+    width: 25%;
+    margin: 0 !important;
+}
+.filter__box select {
+    width: 75%;
+    padding: 7px 15px;
+    outline: none;
+    border:1px solid var(--dark-color) ;
+    cursor: pointer;
+    background: var(--background-input);
+    color: var(--dark-color);
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
+    font-size: .9rem;
+}
+
+select>option{
+    cursor: pointer;
+    color: var(--dark-color);
+    font-size: .9rem;
+}
+
+/* --- Works Menu Styles --- */
+.works__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* --- Work Item Styles --- */
+.work__item {
+    background: var(--page-bgcolor);
+    border-radius: 1rem;
+    border-top-right-radius: 0;
+    cursor: pointer;
+    position: relative;
+    width: 48%;
+    overflow: hidden;
+    display: none;
+}
+
+.work_category{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 7;
+    /* width: 6rem; */
+    background: var(--page-bgcolor);
+    border-bottom-left-radius: 1.5rem;
+    padding: 5px;
+    border: 5px solid var(--page-bgcolor);
+    border-top: none;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+}
+.work_category::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px; 
+    border: 5px solid var(--page-bgcolor); 
+    background: transparent;
+    top: -5px;
+    left: -24px;
+    border-top-right-radius: 70%;
+    border-left: none;
+    border-bottom: none;
+}
+.work_category::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    bottom: -24px;
+    right: -5px;
+    border-top-right-radius: 70%;
+    border: 5px solid var(--page-bgcolor);
+    border-left: none;
+    border-bottom: none;
+}
+.work_category button{
+   padding: 5px 8px;
+   font-size: .7rem;
+   font-weight: normal;
+   background: var(--page-bgcolor);
+   border: 1px solid var(--main-color);
+   border-radius: 1.5rem;
+}
+
+.work__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+    transition: filter 0.3s ease;
+}
+
+.work__title__hover {
+    position: absolute;
+    bottom: -400px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 16px;
+    background: var(--main-color);
+    border-radius: 1rem;
+    transition: bottom 0.4s ease; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.work__item:hover .work__title__hover {
+    bottom: 10%;
+}
+
+.work__item:hover img {
+    filter: blur(2px); 
+}
+
+.work__title__hover h2 {
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+.work__title__hover div a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--light-color);
+}
+
+.work__title__hover div h4 {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.work__title__hover div i {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.work__title__hover div a:hover {
+    color: var(--dark-color);
+    transition: .5s;
+}
+
+/* --- Utility Classes --- */
+.show {
+    display: block;
+}
+
+/* --- Media Queries --- */
+@media only screen and (max-width: 922px) {
+    .work__item {
+        flex: 1 0 auto !important;
+        flex-basis: 320px !important;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+  
+    .work__title__hover h2 {
+        font-size: 1.2rem;
+    }
+
+    .work__title__hover div h4 {
+        font-size: .9rem;
+    }
+
+    .work__title__hover div i {
+        font-size: 1.2rem;
+    }
+}

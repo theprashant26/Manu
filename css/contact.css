@@ -1,0 +1,97 @@
+/* Main Contact Wrapper */
+.contact__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Contact Form and Info Section */
+.contact_form_info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+/* Top Section of Contact Form */
+.contact__Top {
+    position: relative;
+}
+
+/* Form and Right Section Styling */
+.form,
+.contact__right {
+    flex-grow: 1;
+    flex-basis: 350px;
+    position: relative;
+}
+
+/* Blur Effect for the Right Section */
+.contact__right .blur4 {
+    position: absolute;
+    box-shadow: 0 0 1000px 40px var(--active-color);
+    z-index: -3;
+    top: 0%;
+    right: 0%;
+}
+
+/* Input Fields in the Form */
+form .input {
+    margin: 14px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/* Styling for Input and Textarea */
+form .input input,
+form .input textarea {
+    padding: 15px 12px;
+    border-radius: 7px;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--border-input);
+    color: var(--dark-color);
+}
+
+/* Submit Button Styling */
+form button {
+    margin: 0 8px;
+}
+
+/* Contact Information List Items */
+.contact__right ul li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.2rem 0;
+}
+
+/* Icon Styling for Contact Information */
+.contact__right ul li .iconcontact {
+    background: var(--main-color);
+    color: var(--light-color);
+    padding: 8px 12px;
+    border-radius: 100%;
+    font-size: 1.3rem;
+}
+
+/* Contact Information Text Styling */
+.contact__right ul li .infos__contact {
+    width: 100%;
+    color: var(--dark-color);
+}
+
+.contact__right ul li .infos__contact h5,
+.contact__right ul li .infos__contact small {
+    font-size: 1rem;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 610px) {
+    .contact__Top {
+        text-align: left;
+    }
+}

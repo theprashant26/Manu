@@ -1,0 +1,273 @@
+/* ------------------- Header Styles ------------------- */
+
+/* General Header Styles */
+header {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+
+/* Sticky Header */
+.header__scrolling {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    background: var(--page-bgcolor);
+    box-shadow: var(--box-shadow-header);
+}
+
+/* Header Wrapper */
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Header Logo */
+.header__logo h1 {
+    font-size: 1.9rem;
+    line-height: 2rem;
+    color: var(--main-color);
+}
+
+/* Header Links */
+.header__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3rem;
+}
+
+/* Menu Link Styles */
+.menu__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2.5rem;
+}
+
+/* Link Item Styles */
+.link__item {
+    position: relative;
+}
+
+.link__item a {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.link__item i {
+    cursor: pointer;
+}
+
+/* Active Link */
+.active__link {
+    position: relative;
+}
+
+.active__link a {
+    color: var(--active-color);
+    font-weight: 700;
+}
+
+.active__link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background: var(--active-color);
+    border-radius: 50%;
+    transform: translate(18px, -20px);
+    cursor: pointer;
+}
+
+/* Change Mode Button */
+.Change_mode i {
+    color: var(--light-color);
+    background: var(--main-color);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Dropdown Menu */
+.drop_down {
+    position: absolute;
+    background: var(--container-color);
+    width: 170px;
+    line-height: 2rem;
+    border-radius: 12px;
+    z-index: 1;
+    top: 60px;
+    box-shadow: var(--box-shadow);
+    display: none;
+}
+
+.Dark_Mode .drop_down {
+    background: var(--background-input);
+}
+
+.link__item:hover .drop_down {
+    display: block;
+}
+
+.drop_down ul li {
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--dark-color);
+}
+
+.drop_down ul li a {
+    color: var(--dark-color);
+    font-weight: 200;
+}
+
+.drop_down ul li:last-child {
+    border: none;
+}
+
+/* Link Hover and Active Styles */
+.link__item a:hover {
+    color: var(--main-color);
+    transition: all .5s ease-in-out;
+}
+
+.link__item_active {
+    color: var(--main-color) !important;
+}
+
+/* Header Button */
+.header__btn button {
+    background: var(--main-color);
+    color: var(--light-color);
+}
+
+/* Mobile Icon */
+.mobile__icon {
+    position: relative;
+    z-index: 999999999999999999;
+    display: none;
+}
+
+.mobile__icon i {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--dark-color);
+}
+
+.Drop {
+    border: none !important;
+    display: none;
+}
+
+/* ------------------- Responsive Header Styles ------------------- */
+
+/* Header for screens up to 992px */
+@media only screen and (max-width: 992px) {
+
+    .header__link__item {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(23, 23, 23, 0.498);
+        z-index: 999999;
+        transform: translateX(100%);
+        transition: transform 1s ease-in-out;
+    }
+
+    .header__links__active {
+        transform: translateX(0%);
+    }
+
+    .menu__link {
+        flex-direction: column;
+        width: 300px;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 999999999;
+        background: var(--light-color);
+        line-height: 60px;
+    }
+
+    .menu__link li {
+        width: 70%;
+    }
+
+    .mobile__icon {
+        display: block;
+    }
+
+    .header__logo h1 {
+        font-size: 1.7rem;
+        line-height: 1.8rem;
+    }
+
+    .header__links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 2rem;
+    }
+
+    .header__btn button {
+        font-size: 1rem;
+    }
+
+    .drop_down {
+        position: relative;
+        background: transparent;
+        width: 100%;
+        border-radius: 0;
+        top: 0;
+        left: 20px;
+        box-shadow: none;
+        display: none;
+        overflow: hidden;
+    }
+
+    .drop_down_active {
+        display: block !important;
+    }
+    .drop_down ul{
+        background: var(--light-color);
+    }
+    .drop_down ul li {
+        padding: 0;
+        border-bottom: none;
+        width: 100%;
+    }
+
+    .link__item:hover .drop_down {
+        display: none;
+    }
+
+    .Drop {
+        display: inline-block;
+        color: var(--dark-color);
+    }
+
+    .active__link::after {
+        display: none !important;
+    }
+}
+
+/* Header for screens up to 768px */
+@media only screen and (max-width: 768px) {
+    .mobile__icon i {
+        font-size: 1.2rem;
+    }
+
+    .header__logo h1 {
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+    }
+}
+
+/* End Responsive Header */
